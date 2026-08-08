@@ -6,7 +6,7 @@ const LINKS = [
   { href: '#how', label: '原理' },
   { href: '#dual', label: '双端' },
   { href: '#evidence', label: '证据' },
-  { href: '#model', label: '模式' },
+  { href: '#model', label: '价格' },
   { href: '#faq', label: 'FAQ' },
 ]
 

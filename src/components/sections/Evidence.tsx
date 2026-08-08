@@ -1,4 +1,4 @@
-import { Phone, HeartHandshake } from 'lucide-react'
+import { Phone, HeartHandshake, MessageSquareHeart } from 'lucide-react'
 import SectionHeader from '@/components/site/SectionHeader'
 import { FadeIn, Stagger, StaggerItem } from '@/components/site/Reveal'
 
@@ -53,7 +53,10 @@ export default function Evidence() {
         </Stagger>
 
         <FadeIn className="mt-16 md:mt-20">
-          <div className="rounded-3xl border border-[#E7DCC9] bg-[#FFFDF8] p-7 shadow-paper md:p-10">
+          <div className="relative rounded-3xl border border-[#E7DCC9] bg-[#FFFDF8] p-7 shadow-paper md:p-10">
+            <span className="absolute right-6 top-6 rounded-full border border-[#A05B38]/30 bg-[#F0E0D2]/60 px-3 py-1 text-xs font-medium text-[#7C4527]">
+              给投资人看
+            </span>
             <div className="flex items-center gap-3">
               <HeartHandshake className="h-5 w-5 text-[#A05B38]" strokeWidth={1.8} />
               <h3 className="font-serif text-xl font-bold text-[#3A322A] md:text-2xl">
@@ -84,6 +87,18 @@ export default function Evidence() {
               <Phone className="mt-0.5 h-4 w-4 shrink-0 text-[#41584A]" strokeWidth={1.8} />
               差异化事实核查：唯一在售的服药「主动确认」闭环 · 唯一「事件→聊天话题」的话题引擎 ·
               主流硬件中唯一的微信小程序家属端。
+            </p>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.1} className="mt-6">
+          <div className="flex items-start gap-4 rounded-3xl border border-[#E4EAE2] bg-[#FFFDF8] p-6 shadow-paper md:items-center md:p-7">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-[#E4EAE2] text-[#41584A]">
+              <MessageSquareHeart className="h-5 w-5" strokeWidth={1.8} />
+            </span>
+            <p className="text-sm leading-relaxed text-[#3A322A] md:text-base">
+              <span className="font-medium text-[#41584A]">给子女的一句话：</span>
+              每周日晚 8 点，一张话题卡准时到您微信——「妈这周药吃得很好，就周三忘了一次，夸夸她。」给爸妈打电话，从此有话可说。
             </p>
           </div>
         </FadeIn>

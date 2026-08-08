@@ -50,7 +50,7 @@ export default function Hero() {
               className="inline-flex items-center gap-2 rounded-full border border-[#A05B38]/40 bg-[#FFFDF8] px-7 py-3.5 text-base font-medium text-[#7C4527] transition-all hover:-translate-y-0.5 hover:border-[#A05B38]"
             >
               <FileDown className="h-5 w-5" strokeWidth={1.8} />
-              下载路演资料
+              留资后发送路演资料
             </a>
           </div>
           <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2">

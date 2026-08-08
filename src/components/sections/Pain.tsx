@@ -1,6 +1,6 @@
 import { HelpCircle, MonitorSmartphone, MessageCircleOff } from 'lucide-react'
 import SectionHeader from '@/components/site/SectionHeader'
-import { Stagger, StaggerItem } from '@/components/site/Reveal'
+import { FadeIn, Stagger, StaggerItem } from '@/components/site/Reveal'
 
 const PAINS = [
   {
@@ -32,6 +32,18 @@ export default function Pain() {
           title="远在他乡，三件说不出口的事"
           desc="我们不是凭空想象需求——这三件事，每一份调研、每一次访谈都在重复出现。"
         />
+        <FadeIn className="mb-10">
+          <div className="mx-auto max-w-3xl rounded-3xl border border-[#A05B38]/25 bg-[#FFFDF8] px-7 py-6 text-center shadow-paper">
+            <p className="text-xs font-medium tracking-[0.2em] text-[#A05B38]">北京通州 · 一键呼真实使用数据</p>
+            <p className="mt-3 font-serif text-lg font-bold leading-relaxed text-[#3A322A] md:text-xl">
+              亲情号码被拨出 <span className="text-[#A05B38]">2346 次</span>，急救键只按了{' '}
+              <span className="text-[#A05B38]">40 余次</span>
+            </p>
+            <p className="mt-2 text-sm text-[#7C7062]">
+              老人最常用的不是救命，是联系——安全名义进来，亲情联络留下。
+            </p>
+          </div>
+        </FadeIn>
         <Stagger className="grid gap-6 md:grid-cols-3">
           {PAINS.map((p) => (
             <StaggerItem key={p.title}>

@@ -53,6 +53,10 @@ export default function Contact() {
                   <p className="mt-5 font-serif text-xl font-bold text-[#3A322A]">已收到，谢谢您</p>
                   <p className="mt-2 max-w-sm text-sm leading-relaxed text-[#7C7062]">
                     我们会在 1–2 个工作日内与您联系。{role === '投资人' ? '路演资料将随邮件一并发送。' : ''}
+                    正式版上线后，将为您发送小程序体验入口。
+                  </p>
+                  <p className="mt-3 rounded-full bg-[#FAF6EE] px-4 py-1.5 text-xs text-[#A09580]">
+                    当前为 demo 演示，提交不会真实发送
                   </p>
                   <button
                     onClick={() => {
@@ -129,7 +133,7 @@ export default function Contact() {
                     提交
                   </button>
                   <p className="text-center text-xs text-[#A09580]">
-                    我们仅将您的信息用于本次联系，不会用于任何其他用途。
+                    本表单为 demo 演示，提交不会真实发送；我们仅将您的信息用于本次联系，不会用于任何其他用途。
                   </p>
                 </motion.form>
               )}

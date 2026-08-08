@@ -37,10 +37,16 @@ export default function Business() {
     <section id="model" className="bg-[#FAF6EE]">
       <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
         <SectionHeader
-          eyebrow="BUSINESS MODEL · 商业模式"
-          title="硬件获客，服务留存，补贴杠杆"
-          desc="499/699 档位下硬件自身可赚钱，无需亏硬件获客；订阅承担长期价值。"
+          eyebrow="PRICING & MODEL · 价格与模式"
+          title="给家庭的价格，给投资人的模式"
+          desc="先看价格：补贴后实付约 349 元起，首年服务随硬件赠送；投资人关心的商业结构在下方。"
         />
+        <FadeIn className="mb-6">
+          <p className="flex items-center gap-2 text-sm font-medium tracking-[0.15em] text-[#41584A]">
+            <span className="h-px w-6 bg-[#41584A]/40" />
+            给家庭的价格
+          </p>
+        </FadeIn>
         <Stagger className="grid gap-6 md:grid-cols-3">
           {PLANS.map((p) => (
             <StaggerItem key={p.name}>
@@ -68,7 +74,7 @@ export default function Business() {
                     适老化补贴 30% 后实付约 <span className="font-semibold">{p.subsidized} 元</span>
                   </p>
                 )}
-                <ul className="mt-6 space-y-2.5">
+                <ul className="mt-6 flex-1 space-y-2.5">
                   {p.features.map((f) => (
                     <li key={f} className="flex items-start gap-2 text-sm text-[#7C7062]">
                       <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#41584A]" strokeWidth={2} />
@@ -76,11 +82,25 @@ export default function Business() {
                     </li>
                   ))}
                 </ul>
+                <a
+                  href="#contact"
+                  className={`inline-flex items-center justify-center gap-1.5 rounded-full px-5 py-2.5 text-sm font-medium transition-colors ${
+                    p.highlight
+                      ? 'bg-[#A05B38] text-[#FFFDF8] hover:bg-[#7C4527]'
+                      : 'border border-[#A05B38]/40 text-[#7C4527] hover:border-[#A05B38]'
+                  } mt-6`}
+                >
+                  {p.subsidized ? `补贴价约 ${p.subsidized} 元${p.name === '守护主机' ? '起' : ''} · 预约体验` : '首年免费 · 预约体验'}
+                </a>
               </div>
             </StaggerItem>
           ))}
         </Stagger>
-        <FadeIn delay={0.15} className="mt-10">
+        <FadeIn delay={0.15} className="mt-12">
+          <p className="mb-5 flex items-center gap-2 text-sm font-medium tracking-[0.15em] text-[#A05B38]">
+            <span className="h-px w-6 bg-[#A05B38]/40" />
+            给投资人看的模式 · 硬件获客，服务留存，补贴杠杆
+          </p>
           <div className="grid gap-5 md:grid-cols-3">
             {PAYERS.map((payer) => (
               <div
