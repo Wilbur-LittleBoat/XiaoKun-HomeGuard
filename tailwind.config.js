@@ -4,6 +4,14 @@ module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Noto Sans SC"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        serif: ['"Noto Serif SC"', 'ui-serif', 'Georgia', 'serif'],
+      },
+      boxShadow: {
+        paper: "0 1px 2px rgba(58,50,42,0.05), 0 8px 24px rgba(58,50,42,0.07)",
+        "paper-lg": "0 2px 4px rgba(58,50,42,0.06), 0 16px 40px rgba(58,50,42,0.10)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
