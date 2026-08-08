@@ -71,7 +71,7 @@ export default function Dual() {
             <div className="flex h-full flex-col overflow-hidden rounded-3xl border border-[#E7DCC9] bg-[#FFFDF8] shadow-paper">
               <div className="relative h-52 overflow-hidden">
                 <img
-                  src="/call-warm.jpg"
+                  src="./call-warm.jpg"
                   alt="老人与子女温馨通话插画"
                   loading="lazy"
                   className="h-full w-full object-cover"

@@ -71,7 +71,7 @@ export default function Hero() {
           <div className="absolute -inset-6 rounded-[2.5rem] bg-[#F0E0D2]/50 blur-2xl" />
           <div className="relative overflow-hidden rounded-[2rem] border border-[#E7DCC9] shadow-paper-lg">
             <img
-              src="/hero-clock.jpg"
+              src="./hero-clock.jpg"
               alt="暖光台灯与座钟形态的桌面守护主机"
               className="h-full w-full object-cover"
               loading="eager"
